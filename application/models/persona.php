@@ -31,7 +31,7 @@ class Persona extends CI_Model{
 
         $this->db->update('personas',$data);
         $this->db->where('id', $this->session->userdata('session_persona_id'));
-        redirect('personac/index');
+        
       }
 
     public function delete($id){

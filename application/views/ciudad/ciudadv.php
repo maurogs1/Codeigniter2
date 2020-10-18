@@ -18,7 +18,5 @@
                   <div class="card-footer text-center">
                     <a class="btn btn-block btn-success disabled" id="btnUpdateCiudades" href="#">Actualizar ciudades</a>
                   </div>
-                  <!-- /.card-footer -->
                 </div>
-                <!--/.card -->
               </div>

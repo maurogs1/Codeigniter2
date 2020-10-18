@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "personac";
+$route['default_controller'] = "loginc";
 $route['404_override'] = '';
 
 

@@ -11,7 +11,8 @@
                         <th>Nombre</th>
                         <th>Apellido</th>
                         <th>Ciudad</th>
-                        <th>DNI</th>                        
+                        <th>DNI</th>  
+                        <th>wasa</th>                     
                         </tr>
                     
                 </thead>                

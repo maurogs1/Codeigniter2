@@ -23,7 +23,6 @@
   <div class="login-logo">
     <h3>Bienvenido</h3>
   </div>
-  <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
       <p class="login-box-msg">Iniciar sesión</p>
@@ -50,7 +49,6 @@
           <div class="col-12">
             <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
           </div>
-          <!-- /.col -->
         </div>
       </form>
 

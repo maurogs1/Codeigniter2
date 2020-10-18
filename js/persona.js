@@ -23,14 +23,14 @@ $('#cmbCiudades').change(function(){
         function(data){
             var personas = JSON.parse(data);
             $.each(personas, function(i,item) {
-                $('#tblPersonas').append(
-                    
+                $('#tblPersonas').append(                    
                     '<tr>'+
                     '<td>'+item.id+'</td>'+
                     '<td>'+item.nombre+'</td>'+
                     '<td>'+item.apellido+'</td>'+
                     '<td>'+item.ciudad+'</td>'+
-                    '<td>'+item.dni+'</td>'+                    
+                    '<td>'+item.dni+'</td>'+     
+
                 '</tr>'
                 );
             })
@@ -44,7 +44,8 @@ $('#cmbCiudades').change(function(){
         '<th>Nombre</th>'+
          '<th>Apellido</th>'+
          '<th>Ciudad</th>'+
-         '<th>DNI</th>'+                   
+         '<th>DNI</th>'+    
+         '<td>DNI</td>'+                  
          '</tr>'
      );
 $.post(baseurl+"personac/getAll",
@@ -55,10 +56,11 @@ function(data){
             
             '<tr>'+
             '<td>'+item.id+'</td>'+
-            '<td>'+item.nombre+'</td>'+
+             '<td>'+item.nombre+'</td>'+
             '<td>'+item.apellido+'</td>'+
             '<td>'+item.ciudad+'</td>'+
-            '<td>'+item.dni+'</td>'+                    
+            '<td>'+item.dni+'</td>'+   
+            '<td>'+item.dni+'</td>'+  
         '</tr>'
         );
     })

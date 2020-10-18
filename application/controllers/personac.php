@@ -11,7 +11,6 @@ class Personac extends CI_Controller {
 
     public function index(){
         $this->load->view('layout/header');
-        $this->load->view('layout/menu');
         $this->load->view('persona/personav');
         $this->load->view('layout/footer');
     }
@@ -40,7 +39,7 @@ class Personac extends CI_Controller {
         $persona_data['apellido'] = $this->input->post('apellido');
         $persona_data['email'] = $this->input->post('email');
         $this->persona->update($persona_data);
-        $this->load->view('persona/personav');
+       
     }
 
     public function delete(){

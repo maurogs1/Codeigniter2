@@ -4,24 +4,24 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form class="form-horizontal">
+              <form class="form-horizontal" action="<?php echo base_url();?>personac/update" method="POST">
                 <div class="card-body">
                 <div class="form-group row">
                     <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                      <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
                     </div>
                   </div>
                   <div class="form-group row">
                     <label for="apellido" class="col-sm-2 col-form-label">Apellido|</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                      <input type="text" class="form-control"  name="apellido"id="apellido" placeholder="Apellido">
                     </div>
                   </div>                
                   <div class="form-group row">
                     <label for="email" class="col-sm-2 col-form-label">Email</label>
                     <div class="col-sm-10">
-                      <input type="email" class="form-control" id="email" placeholder="Email">
+                      <input type="email" name="email" class="form-control" id="email" placeholder="Email">
                     </div>
                   </div>
          

@@ -22,8 +22,8 @@
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/ci2/';
-//$config['base_url'] = 'https://ci2-app.herokuapp.com/';
+//$config['base_url'] = 'http://localhost/ci2/';
+$config['base_url'] = 'https://ci2-app.herokuapp.com/';
 /*
 |--------------------------------------------------------------------------
 | Index File

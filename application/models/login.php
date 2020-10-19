@@ -15,8 +15,8 @@ class Login extends CI_Model{
         $this->db->where('u.username',$username);
         $this->db->where('u.password',$password);
         $response = $this->db->get();
-
-        if($response->num_rows() == 1){
+        
+        if($response->num_rows() >= 1){
             //row obtiene el registro
             $result = $response->row();
              $user_session = array(

@@ -29,7 +29,7 @@ class Loginc extends CI_Controller {
             $this->load->view('persona/persona_menu');
             $this->load->view('layout/footer');
         }else{
-            $data['msg'] = "Nombre de usuario o contraseña inválido jaja";
+            $data['msg'] = "Nombre de usuario o contraseña inválido";
             
             $this->load->view('usuario/loginv',$data);
         }

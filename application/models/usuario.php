@@ -16,9 +16,17 @@ class Usuario extends CI_Model{
         $this->db->insert('usuarios', $data);
     }
     public function delete($id){
-        $this->db->where('id',$id);
-        
-        $this->db->delete('usuarios');
+       
+         $this->db->where('id', $id);
+         $this->db->delete('usuarios');
+     
+    }
+
+    public function findByPersona($id){
+        $this->db->select('id');
+        $this->db->from('usuarios u');
+        $this->db->where('u.personaId', $id);
+        return  $this->db->get()->row()->id;
     }
 
 }

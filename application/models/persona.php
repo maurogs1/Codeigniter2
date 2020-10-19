@@ -29,8 +29,14 @@ class Persona extends CI_Model{
             'email' => $param['email'],
         );
 
-        $this->db->update('personas',$data);
+        if($param['personaId'] > 0)
+        $this->db->where('id', $param['personaId']);
+        else
         $this->db->where('id', $this->session->userdata('session_persona_id'));
+        $this->db->update('personas',$data);
+      
+    
+        
         
       }
 
@@ -48,7 +54,7 @@ class Persona extends CI_Model{
     }
 
     public function getAll(){
-        $this->db->select('p.id, p.nombre, p.apellido,p.dni,c.nombre as ciudad');
+        $this->db->select('p.id, p.nombre,p.email, p.apellido,p.dni,c.nombre as ciudad');
         $this->db->from('personas p');
         $this->db->join('ciudades c', 'c.id = p.ciudadId');
 

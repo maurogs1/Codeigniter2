@@ -40,7 +40,6 @@ $.post(baseurl+"notasc/getNotas",
     $('#btnNotas').click(function(){
         var i = 0;
         $('#tblNotas .filaNotas').each(function(){
-            alert("asd");
             var idPer = $('.alumno:eq('+i+')').attr('id');
             var n1 = $('.nota1:eq('+i+')').val();
             var n2 = $('.nota2:eq('+i+')').val();

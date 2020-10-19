@@ -7,8 +7,7 @@
                   <div class="card-body p-0">
                     <ul class="users-list clearfix" id="listCiudades">
                       <li>
-                        <img src="dist/img/user1-128x128.jpg" alt="User Image">
-                        <a class="users-list-name" href="#">Alexander Pierce</a>
+                        <a class="users-list-name" href="#">Ciudad</a>
                         <span class="users-list-date">Today</span>
                       </li>                  
                     </ul>

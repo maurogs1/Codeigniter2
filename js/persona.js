@@ -61,7 +61,7 @@ function(data){
             '<td>'+item.apellido+'</td>'+
             '<td>'+item.ciudad+'</td>'+
             '<td>'+item.dni+'</td>'+   
-            '<td> <button id="btnDelete" onClick="deletePersona()"  class="btn btn-sm btn-danger btn-block"><i class="fas fa-trash-alt"></i></button> <br>'+
+            '<td> <button id="'+item.id+'" onClick="deletePersona('+item.id+')"  class="btn btn-sm btn-danger btn-block"><i class="fas fa-trash-alt"></i></button> <br>'+
             '<a href="#" class="btn btn-block btn-primary btn-sm"  data-toggle="modal" data-target="#modal-overlay" onClick="selPersona(\''+item.id+'\',\''+item.nombre+'\',\''+item.apellido+'\',\''+item.email+'\');"><i class="fa fa-fw fa-edit"></i></a></td>' +
             +
             
@@ -71,17 +71,12 @@ function(data){
 });
  } );
 
- deletePersona = function(){
-    var i = 0;
-              $('#tblPersonas .filaPersona').each(function(){
-             var idPer = $('.persona:eq('+i+')').attr('id');
-             $.post(baseurl+"personac/deletePersona",
-             {idPer: idPer},
-                 function(data){
-
-                 });  
-                 i++;        
-  });
+ deletePersona = function(personaId){
+     alert(personaId);
+  $.post(baseurl+"personac/deletePersona",
+  {idPer: personaId},
+      function(data){
+      });
  };
 
  selPersona = function(personaId, nombre, apellido, email){

@@ -48,16 +48,16 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'vrk7xcrab1wsx4r1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com';
-$db['default']['username'] = 'r199nqd4jr2lkcht';
-$db['default']['password'] = 'js5o1hkxs422wjav';
-$db['default']['database'] = 'jfbbxr9jilndqjfn';
-$db['default']['dbdriver'] = 'mysqli';
-// $db['default']['hostname'] = 'localhost';
-// $db['default']['username'] = 'root';
-// $db['default']['password'] = '';
-// $db['default']['database'] = 'ci2_crud';
+// $db['default']['hostname'] = 'vrk7xcrab1wsx4r1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com';
+// $db['default']['username'] = 'r199nqd4jr2lkcht';
+// $db['default']['password'] = 'js5o1hkxs422wjav';
+// $db['default']['database'] = 'jfbbxr9jilndqjfn';
 // $db['default']['dbdriver'] = 'mysqli';
+ $db['default']['hostname'] = 'localhost';
+ $db['default']['username'] = 'root';
+ $db['default']['password'] = '';
+ $db['default']['database'] = 'ci2_crud';
+ $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;

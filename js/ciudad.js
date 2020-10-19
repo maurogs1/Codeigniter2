@@ -1,4 +1,4 @@
-$.post("../ci2/ciudadc/getCiudades", //Llama la ur
+$.post("../../ciudadc/getCiudades", //Llama la ur
     {
         sitReg: 1                     //Paramétros
     },

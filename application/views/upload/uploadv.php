@@ -10,7 +10,7 @@
     </div>
     <button type="submit" class="btn btn-danger"> Guardar </button>
 <?php echo $error;?>
-
+<?php echo $estado;?>
 
 </form>
 
@@ -23,19 +23,19 @@
 <h3>Subir y descargar Archivo</h3>
 <form action="<?php echo base_url();?>uploadc/uploadFile" method="POST" enctype="multipart/form-data">
     <div class="form-group">
-        <label for="titulo">Título</label>
+        <label for="tituloFile">Título</label>
         <input id="tituloFile" name="tituloFile" class="form-control" type="text" >
     </div>
     <div class="form-group">
         <label for="file">Archivo</label>
         <input id="file" name="file" class="form-control" type="file" >
     </div>
-    <but ton type="submit" class="btn btn-danger"> Guardar </button>
+    <button type="submit" class="btn btn-danger"> Guardar </button>
 <?php echo $error;?>
 </form>
 
 
 <?php echo $errorArch;?>
-<?php echo $estado?>
-
-<a href="<?php echo base_url()?>uploadc/download/<?php echo $archivo;?>"> Descargar </a>
+<?php echo $estado;?>
+<br><br>
+<a class="btn btn-success" href="<?php echo base_url()?>uploadc/download/<?php echo $archivo;?>"> Descargar </a>
